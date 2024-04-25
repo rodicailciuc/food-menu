@@ -1,17 +1,18 @@
 # Image gallery
 
-> A simple
+> A simple food menu project
 
 ## Table of contents
 
-- [General info](#general-info)
-- [Screenshots](#screenshots)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Features](#features)
-- [Status](#status)
-- [Inspiration](#inspiration)
-- [Contact](#contact)
+- [Image gallery](#image-gallery)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [Screenshots](#screenshots)
+  - [Technologies](#technologies)
+  - [Setup](#setup)
+  - [Code Examples](#code-examples)
+  - [Status](#status)
+  - [Contact](#contact)
 
 ## General info
 
@@ -20,7 +21,7 @@
 
 ## Screenshots
 
-![Example screenshot]()
+![Example screenshot](./assets/Capture%20d’écran%202024-04-25%20095140.png)
 
 ## Technologies
 
@@ -36,26 +37,24 @@ clone the repo and start using the stop watch.
 ## Code Examples
 
 ```js
+const loadHandler = () => {
+    data.buttons.forEach((btn) => {
+        const button = createButtons(btn);
+        dom.buttonsContainer.append(button);
+    });
 
+    data.menu.forEach((item) => {
+        const article = createItems(item);
+        dom.menuItems.append(article);
+    });
+};
 ```
-
-## Features
-
-List of features ready and Todos for future development
-
--
--
--
-
-To-do list:
-
--
--
 
 ## Status
 
 Project is: _in progress_
 
-## Inspiration
 
 ## Contact
+
+[Rodica](https://github.com/rodicailciuc)
